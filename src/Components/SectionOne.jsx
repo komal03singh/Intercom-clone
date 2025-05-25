@@ -113,11 +113,6 @@ function SectionOne() {
 
         </ul>
 
-        <div className='flex justify-center absolute top-[80%] left-3 rounded-lg h-8 w-15' style={{boxShadow: "0 0 10px rgba(0,0,0,0.2)"}}>
-          <span className="bg-gray-300 p-1 m-1 flex items-center rounded-lg"><RiSidebarFoldFill /></span>
-          <span className="p-1 flex items-center text-lg"><IoMenu /></span>
-        </div>
-
       </main>
     </div>
   )

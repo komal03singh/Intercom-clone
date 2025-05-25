@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/logo.png'
 import { FaArrowUpLong } from "react-icons/fa6";
 import { TbLayoutSidebar } from "react-icons/tb";
-
-
-
-
+import { LuAlignJustify } from "react-icons/lu";
+import SectionOne from './SectionOne';
 
 
 function SectionThree() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log("menu open",isMenuOpen);
+
   return (
-    <div >
-      <nav className='flex justify-between h-12 border-b border-black/10 px-4 pt-3'>
+    <div>
+      <nav className='flex justify-between h-12 border-b border-black/10 px-4 pt-3 '>
         <div className='flex gap-6 text-sm font-medium text-gray-500 px-2'>
-          <div className='pb-[0.5px] bg-gradient-to-r from-purple-600 to-gray-500'>
+          <div className='flex justify-center mt-2 lg:hidden md:hidden text-lg text-black'> <button onClick={() => setIsMenuOpen(!isMenuOpen)} href=""><LuAlignJustify /></button></div>
+          <div className='pb-0.5 bg-gradient-to-r from-purple-600 to-gray-500'>
             <div className='bg-white pb-3'>
               <h5 className=' border-black bg-gradient-to-r from-purple-600 to-gray-500 text-transparent bg-clip-text rounded-2xl px-2' >AI Copilot</h5>
             </div>
@@ -28,6 +30,10 @@ function SectionThree() {
       </nav>
 
       <div className='flex flex-col relative h-screen bg-gradient-to-t from-[#ccccf0] via-[#f8eef2] to-transparent'>
+
+        <div className={`absolute lg:hidden md:hidden top-0 left-0 w-11/12 h-4/5 bg-white z-10 transition-all duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+          <SectionOne/>
+        </div>
 
         <div className='flex flex-col justify-center items-center h-[85%] w-full gap-3'>
 
