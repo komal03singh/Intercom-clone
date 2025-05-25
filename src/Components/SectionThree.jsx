@@ -14,7 +14,7 @@ function SectionThree() {
     <div>
       <nav className='flex justify-between h-12 border-b border-black/10 px-4 pt-3 '>
         <div className='flex gap-6 text-sm font-medium text-gray-500 px-2'>
-          <div className='flex justify-center mt-2 lg:hidden md:hidden text-lg text-black'> <button onClick={() => setIsMenuOpen(!isMenuOpen)} href=""><LuAlignJustify /></button></div>
+          <div className='flex justify-center mb-1 lg:hidden md:hidden text-xl text-black'> <button onClick={() => setIsMenuOpen(!isMenuOpen)} href=""><LuAlignJustify /></button></div>
           <div className='pb-0.5 bg-gradient-to-r from-purple-600 to-gray-500'>
             <div className='bg-white pb-3'>
               <h5 className=' border-black bg-gradient-to-r from-purple-600 to-gray-500 text-transparent bg-clip-text rounded-2xl px-2' >AI Copilot</h5>
@@ -46,7 +46,7 @@ function SectionThree() {
 
         </div>
 
-        <div className='flex flex-col justify-center w-full absolute top-[82%] left-0 h-15 px-2'>
+        <div className='flex flex-col justify-center w-full absolute lg:top-[82%] top-[78%] left-0 h-15 px-2'>
 
           <div className='flex justify-between h-10 p-2 px-4 bg-white rounded-lg' style={{boxShadow: "0 0 10px rgba(0,0,0,0.2)"}}>
             <form action="">

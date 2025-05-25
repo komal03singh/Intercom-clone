@@ -6,10 +6,6 @@ import { RiSidebarFoldFill } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
 
 
-
-
-
-
 function SectionOne() {
   return (
     <div>
